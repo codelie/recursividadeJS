@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recursivas</title>
+</head>
+
+<body>
+
+<script type="application/javascript">
+
+	function recursiva(i) {
+		if (i > 1 ){
+			document.write('Vetor Recebido :'+i+'<br>');
+			return recursiva(i - 1);
+		} else {
+			document.write('Vetor Parada :'+i+'<br>');
+			return 1;
+		}
+	}
+	recursiva(10);
+
+
+	function fatorial(i) {
+		if (i > 1 ){
+			return  (i * fatorial(i - 1) );
+		} else {
+			return 1;
+		}
+	}
+	var numero = 5;
+	document.write('Fatorial de '+numero+' é: '+fatorial(numero));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var vetorOriginal = [7,4,1,8,2,6,3,5,9];
+var w = 0;
+
+function compare(vetor,indx,indy) {
+	if ( vetor[indx] > vetor[indx] )
+	{
+		return vetor[indx];
+	}
+	else
+	{
+		return vetor[indy];
+	}
+	
+}
+
+//console.log(compare(vetorOriginal,1,8));
+
+
+
+</script>
+
+</body>
+</html>
